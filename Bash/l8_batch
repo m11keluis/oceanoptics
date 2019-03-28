@@ -1,0 +1,34 @@
+#!/bin/bash
+# Batch Processing for Landsat 8 GEOTIFF Files
+l8_path='/mnt/data1/shared_data/Rwanda/Kivu_L8files/*'
+N=-1.544028 
+S=-2.577613
+W=28.520361
+E=29.492651 
+
+# Loop Through Folder with Level 1 Lake Kivu Files
+for DIR in l8_path;
+    do
+    cd $DIR
+        BASE=$(echo ${PWD##*/})
+        print BASE
+        INFILE=${BASE}_MTL.txt
+        L2FILE=${BASE}.L2
+
+        # Run SeaDAS Level 1 to Level 2 Processor       
+        l2gen ifile=$INFILE \
+        ofile=${L2FILE} \
+
+        # L2Gen Parameters
+        # Products
+        l2prod=chlor_a,l2_flags \
+
+        # Bounding Box
+        north=N \
+        south=S \
+        west=W \
+        east=E
+
+done
+
+~           

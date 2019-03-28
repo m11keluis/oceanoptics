@@ -1,0 +1,34 @@
+#!/bin/bash
+# Batch Processing of Lake Kivu Chlorophyll Maps
+
+s2_path='/mnt/data1/shared_data/Kelly/Bulk_Order_955011/Sentinel-2/Kivu_S2/*'
+N=-1.544028
+S=-2.577613
+W=28.520361
+E=29.49265
+
+# Loop Through Folder with Level 1 Lake Kivu Files
+for DIR in s2_path;
+
+    do
+    cd $DIR
+        BASE=$(${PWD##*/})
+        INFILE=manifest.safe
+        L2FILE=manifest.safe.L2
+
+        # Run SeaDAS Level 1 to Level 2 Processor       
+        l2gen ifile=$INFILE \
+        ofile=$L2FILE \
+
+        # L2Gen Parameters
+        # Products
+        l2prod=chlor_a,l2_flags,Rrs_nnn \
+
+        # Bounding Box
+        north=N \
+        south=S \
+        west=W \
+        east=E
+
+done
+
