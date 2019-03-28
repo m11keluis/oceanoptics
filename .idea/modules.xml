@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ocean_optics.iml" filepath="$PROJECT_DIR$/.idea/ocean_optics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../oceanoptics/.idea/oceanoptics.iml" filepath="$PROJECT_DIR$/../oceanoptics/.idea/oceanoptics.iml" />
     </modules>
   </component>
 </project>
