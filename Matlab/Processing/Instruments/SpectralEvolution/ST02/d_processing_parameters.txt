@@ -1,0 +1,36 @@
+Data Directory:      ...de_for_UMB_SEV\ST02\
+Measurement Date:    2018-05-11 Time: 13:50:00
+Latitude:            28.5207
+Longitude:           -84.4408
+Processing Date:     18-Jul-2018 17:17:25
+Wind Speed:          3
+Sigma Water:         2
+Sigma Sky:           1.5
+Sigma Reference:     1
+Plot Scale:          3
+Solar Elevation:     88.7483
+Solar Zenith:        37.8951
+Solar Azimuth:       0.0022374
+Moby Factor:        52.1049
+Rrs Minimum:         0.020595
+RefCal, 0=no 1=yes:  0
+Pedestal Type 0-3:   2
+
+Processed Files 
+(1 Water; 2 Sky; 3 Reference; Neg - Not Used) 
+
+NAME                       TYPE 
+14B82A3_00079.sed  2
+14B82A3_00080.sed -2
+14B82A3_00081.sed -2
+14B82A3_00082.sed -2
+14B82A3_00083.sed -2
+14B82A3_00099.sed  1
+14B82A3_00100.sed  1
+14B82A3_00101.sed  1
+14B82A3_00102.sed  1
+14B82A3_00103.sed -3
+14B82A3_00104.sed  3
+14B82A3_00105.sed  3
+14B82A3_00106.sed  3
+14B82A3_00107.sed  3

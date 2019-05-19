@@ -1,0 +1,6 @@
+function [Rrs]=gettRrs(rrs)
+% calculate 
+    global WL WN
+
+    Rrs(1:WN)=0.52.*rrs(1:WN)./(1-1.7*rrs(1:WN));
+end
