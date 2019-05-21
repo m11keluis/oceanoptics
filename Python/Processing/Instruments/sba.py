@@ -19,7 +19,7 @@ def read_sba(rrs_file):
     rrs_temp = rrs_mat.LS_hyperspectral_data / rrs_mat.ES_hyperspectral_data
 
     # Format Time Stamp
-    time_stamp = [dt.datetime.strptime('{} {}'.format(d, t), '%Y%m%d %H%M%S%f')
+    time_stamp = [dt.datetime.strptime('{} {}'.format(d, t), '%Y%j %H%M%S%f')
                   for d, t in zip(rrs_mat.ES_hyperspectral_datetag, rrs_mat.ES_hyperspectral_timetag2)]
 
     # Format Wavelengths
@@ -60,6 +60,6 @@ def stat_bin(df, num=10, method=1):
         temp = grp_dt.get_group(key).pipe(lambda d: (lambda m: m + (d - m).mean())(d.min())).to_pydatetime()
         df_mean.append(temp)
 
-    resampled_df = resampled_df.set_index(pd.DatetimeIndex(pd.DataFrame(df_mean)))
+    resampled_df['dt_stamp'] = df_mean
 
     return resampled_df
