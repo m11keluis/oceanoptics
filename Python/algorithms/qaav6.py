@@ -1,5 +1,5 @@
 def qaav6(Rrs, wl, aw, bbw):
-    # TODO: Comment steps 2 and onward
+    # TODO: Comment steps 3 and onward
 
     """
 
@@ -7,7 +7,7 @@ def qaav6(Rrs, wl, aw, bbw):
     :param wl: Corresponding Wavelengths (nm)
     :param aw: Pure water absorption coefficient
     :param bbw: Pure water backscattering coefficient
-    :return: total absorption and backscattering coefficients
+    :return: total absorption and backscattering coefficients and backscattering by particles in a pandas dataframe
 
     """
 
@@ -15,6 +15,7 @@ def qaav6(Rrs, wl, aw, bbw):
     import numpy as np
     import pandas as pd
 
+    # Find Closest Wavelength to 443, 490, 555, and 670
     id443 = np.where(abs(wl - 443) == min(abs(wl - 443)))
     id490 = np.where(abs(wl - 490) == min(abs(wl - 490)))
     id555 = np.where(abs(wl - 550) == min(abs(wl - 550)))
@@ -29,16 +30,16 @@ def qaav6(Rrs, wl, aw, bbw):
     g0 = 0.089
     g1 = 0.125
 
+    # Ratio of Backscattering to the Sum of Total Absorption and Total Backscattering
     u = (-g0 + (g0 ** 2 + 4 * g1 * rrs) ** 0.5) / (2 * g1)
 
-    # Step 2: Determine Reference Wavelength by Rrs value
+    # Step 2: Determine Reference Wavelength by Rrs value: Determined by value of Red Band Rrs
 
     if Rrs[id670] < 0.0015:
 
         wl_ref = wl[id555]
         id_ref = id555
 
-        rrs_ref = rrs[id_ref]
         ki = np.log10((rrs[id443] + rrs[id490]) / (rrs[id_ref] + 5 * rrs[id670] * rrs[id670] / rrs[id490]))
         a_ref = aw[id555] + 10 ** (-1.146 - 1.366 * ki - 0.469 * ki ** 2)
 
@@ -59,6 +60,7 @@ def qaav6(Rrs, wl, aw, bbw):
     a = []
     bbp = []
 
+    # Use Reference Wavelengths to Compute Total Absorption and Backscattering
     for i in range(len(wl)):
         bbp_temp = bbp_ref * (wl_ref / wl[i]) ** Y
         a_temp = (1 - u[i]) * (bbw[i] + bbp_temp) / u[i]
