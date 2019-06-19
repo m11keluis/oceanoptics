@@ -47,14 +47,14 @@ Rrs(id670) = Rrs(id670).*0.762+(4.52e-5);
 aw  = [0.005 0.011 0.064 0.368];
 bbw = [0.0021 0.0014 0.0008 0.0004];
 
-%% Step 1
+%% Step 1: Calculate subsurface remote sensing reflectance 
 rrs = Rrs./(0.52+1.7*Rrs);
 
 g0 = 0.089;
 g1 = 0.125;
 u  = (-g0 + (g0^2 + 4*g1*rrs).^0.5)/(2*g1);
 
-%% Step 2
+%% Step 2: Determine Reference Wavelength
     if Rrs(id670) < 0.0015
 
         wl_ref = wl(id555);
@@ -72,19 +72,19 @@ u  = (-g0 + (g0^2 + 4*g1*rrs).^0.5)/(2*g1);
     end
 
 
-%% Step 3
+%% Step 3: Backscattering by Particles at Reference Wavelength
 bbp_ref = u(id_ref).*a_ref/(1-u(id_ref)) - bbw(3);
 
 %% Step 4
 Y = 2.0*(1-1.2*exp(-0.9*rrs(id443)/rrs(id555)));
 
-
-%% Step 5 & Step 6: 
+%% Step 5 & Step 6: Use reference information to caluclate IOPs
     for i = 1 : length(wl)
        bbp(1,i) = bbp_ref *(wl_ref/wl(i))^Y;
        a(1,i)   = (1-u(i)).*(bbw(i) + bbp(i))./u(i);      
     end
 
+% Total Backscattering
 bb = bbp + bbw;
 
 apg = a - aw; %h2o_iops(wl,'a');
