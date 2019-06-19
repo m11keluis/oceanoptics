@@ -1,5 +1,5 @@
 function boxedP = extractC(parameter, slat, slon, coord)
-% Description: This function extracts a 3x3 box centered on the coordinates
+% Description: This function extracts a 3x3 box centered on coordinates
 % of interest
 %
 % Input:
@@ -9,7 +9,8 @@ function boxedP = extractC(parameter, slat, slon, coord)
 % coord = Coordinates of interest [Latitude Longitude]
 %
 % Output:
-% boxedP = 9x1 array of 
+% boxedP = Array of 3x3 box of output parameter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     for site = 1:length(coord) 
             if isnan(coord(site)) 

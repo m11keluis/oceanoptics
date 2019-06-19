@@ -30,7 +30,5 @@ function struct = readL2(filename)
     struct.angstrom = ncread(filename,'/geophysical_data/angstrom');
     struct.l2_flags = ncread(filename,'/geophysical_data/l2_flags');
     
-
-
 end
 
