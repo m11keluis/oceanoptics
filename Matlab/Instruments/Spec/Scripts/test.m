@@ -30,7 +30,7 @@ D_3std = nanstd([22.62 22.19 21.74]);
 D_mean = nanmean([D_1 D_2 D_3]);
 D_std = sqrt(D_1std.^2 + D_2std.^2 + D_3std.^2);
 
-A = (pi./4).*(D_mean.^2);
+A = (pi./4).*((D_mean./10).^2);
 
 L = V/A;
 

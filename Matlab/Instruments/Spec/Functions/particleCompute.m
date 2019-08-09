@@ -9,7 +9,7 @@ function ap = particleCompute(od, l)
 % Beta correction
 b = 0.679 .* exp(1.248 .* log(od));
 
-ap = (2.303./l).*b;
+ap = ((2.303.*100)./l).*b;
 
 end
 
