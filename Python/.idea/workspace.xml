@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a855aa1-d659-40d3-8408-8eef6519bf47" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/a_coeff.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/a_coeff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/blankNIRcorrected.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/blankNIRcorrected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/blankcorrected.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/blankcorrected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/raw_absorbance.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/raw_absorbance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/raw_blank.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Figures/raw_blank.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Functions/cdomCompute.m" beforeDir="false" afterPath="$PROJECT_DIR$/../Matlab/Instruments/Spec/Functions/cdomCompute.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/qaav6.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/qaav6.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,16 +24,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithms/qaav6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+            <state relative-caret-position="300">
+              <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Examples/qaav6_example.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="e#19#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithms/L8Zsd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="390">
               <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
             </state>
           </provider>
@@ -56,13 +73,13 @@
         <option value="$PROJECT_DIR$/Examples/qaav6_example.py" />
         <option value="$PROJECT_DIR$/Algorithms/qaav6.py" />
         <option value="$PROJECT_DIR$/Algorithms/L8Zsd.py" />
+        <option value="$PROJECT_DIR$/Algorithms/qaaV6" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="485" />
     <option name="y" value="23" />
-    <option name="width" value="954" />
+    <option name="width" value="783" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -82,6 +99,11 @@
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="Examples" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -116,9 +138,6 @@
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Examples" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -163,10 +182,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1439" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48598132" visible="true" weight="0.021156559" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5140187" side_tool="true" visible="true" weight="0.021156559" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48425198" visible="true" weight="0.15856236" />
+      <window_info id="Structure" order="1" sideWeight="0.515748" side_tool="true" visible="true" weight="0.15856236" />
       <window_info id="Favorites" order="2" sideWeight="0.5019531" side_tool="true" weight="0.12330536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -175,10 +195,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896462" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.31847134" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.31847134" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32896462" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3538663" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.35286623" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -244,27 +264,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/qaav6_example.py">
+    <entry file="file://$PROJECT_DIR$/Algorithms/L8Zsd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="20" column="73" lean-forward="true" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+        <state relative-caret-position="390">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/qaaV6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#19#38#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/qaav6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+        <state relative-caret-position="300">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/L8Zsd.py">
+    <entry file="file://$PROJECT_DIR$/Examples/qaav6_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="464">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="e#19#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
