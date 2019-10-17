@@ -13,7 +13,12 @@ close all
 % HyperPro Folder
 folder = '/Users/kellyluis/PycharmProjects/oceanoptics/Matlab/Instruments/HyperProSBA/';
 % Dataset Folder
-datasetFolder = [folder 'Datasets/UMB_SBA/Mat_Files/'];
+datasetFolder = [folder 'Datasets/191015_MassBay/'];
+% Set up Station Names
+stationName = {'Station 1'; 'Station 1a'; 'Station 1b'; 'Station 2'; ...
+    'Station 3'; 'Station 4'; 'Station 4a';'Station 5'};
+% Specify Date for Figure Building
+date = '10/15/19';
 
 %% Don't Touch Code Below 
 figureFolder = [folder 'Figures/'];
@@ -241,6 +246,8 @@ for file = 1:length(matfileFolder)
          legend('R_r_s corrected','R_r_s measured','R_r_s simulated');
          set(gca,'FontSize',14)
          title([fname{file} ': Shadow Corrected'])
+         
+        Rrsall(file,:) = Rrsc(1:WN);
 
         set(gcf,'Color','w')
         export_fig([figureFolder 'rrs_corrected_' fname{file}],'-m3','-painters')
@@ -250,3 +257,18 @@ for file = 1:length(matfileFolder)
     end
 
 end
+
+%% Plot all Cone correct Rrs
+figure(2) 
+for meas = 1:size(Rrsall,1)
+    plot(WL,Rrsall(meas,:), 'LineWidth', 2, 'DisplayName', stationName{meas})
+    hold on
+end
+hold off
+legend show
+xlabel('Wavelength (nm)')
+ylabel('R_r_s_ (1/sr)')
+title(strcat('SBA Rrs:', date))
+set(gcf,'Color','w')
+set(gca,'LineWidth',2','FontSize',16);
+export_fig([figureFolder 'all_rrs'],'-m3','-painters')
