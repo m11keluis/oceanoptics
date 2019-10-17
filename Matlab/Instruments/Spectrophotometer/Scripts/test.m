@@ -2,14 +2,12 @@ clear
 clc
 close all 
 
-
-addpath('/Users/kellyluis/Desktop/Projects/Spectrophotometer/Functions')
-addpath('/Users/kellyluis/Desktop/Projects/Spectrophotometer/Functions/save_fig')
-
+folder = '/Users/kellyluis/PycharmProjects/oceanoptics/Matlab/Instruments/Spectrophotometer/';
+addpath(genpath(folder)); 
 
 %% Load Dataset
-cd('/Users/kellyluis/Desktop/Projects/Spectrophotometer/Datasets')
-load('test.mat')
+cd(strcat(folder,'Datasets'))
+load('massbay_191015.mat')
 
 %% Format Wavelength, Volume, and Area
 % Wavelength

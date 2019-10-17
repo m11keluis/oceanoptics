@@ -5,5 +5,5 @@ function ag = cdomCompute(od, l)
     end
         
     ag = (2.303./l).*od;
-    
+ 
 end

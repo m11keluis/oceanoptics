@@ -1,0 +1,38 @@
+Data Directory:      ...Evolution/Station3b/
+Measurement Date:    2019-10-15 Time: 12:58:00
+Latitude:            42.342
+Longitude:           -70.672
+Processing Date:     17-Oct-2019 00:18:24
+Wind Speed:          2.5
+Sigma Water:         2
+Sigma Sky:           1.5
+Sigma Reference:     1
+Plot Scale:          3
+Solar Elevation:     123.1807
+Solar Zenith:        20.107
+Solar Azimuth:       -0.0063719
+Moby Factor:        69.893
+Rrs Minimum:         0.013315
+RefCal, 0=no 1=yes:  0
+Pedestal Type 0-3:   2
+
+Processed Files 
+(1 Water; 2 Sky; 3 Reference; Neg - Not Used) 
+
+NAME                       TYPE 
+14B82A3_00073.sed  1
+14B82A3_00074.sed -1
+14B82A3_00075.sed -1
+14B82A3_00076.sed -1
+14B82A3_00077.sed  1
+14B82A3_00078.sed  1
+14B82A3_00079.sed  1
+14B82A3_00080.sed  1
+14B82A3_00081.sed  1
+14B82A3_00082.sed  1
+14B82A3_00083.sed  1
+14B82A3_00084.sed  3
+14B82A3_00085.sed  2
+14B82A3_00086.sed  3
+14B82A3_00087.sed  3
+14B82A3_00088.sed  3

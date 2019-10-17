@@ -97,15 +97,15 @@ save([dirin,'d_r_average.txt'], 'ravg', '-ascii');
 % Ravg.Lu=ravg(:,1);
 % Ravg.Ls=ravg(:,2);
 % Ravg.Ed=ravg(:,3);
-SEV_May(ii).St=allstdir(ii).name;
-SEV_May(ii).SZA=mdata.solar_zenith;
-SEV_May(ii).rho = mdata.mobly_factor;
-SEV_May(ii).wl=wl;
-SEV_May(ii).Lu_avg=ravg(:,1);
-SEV_May(ii).Ls_avg=ravg(:,2);
-SEV_May(ii).Ed_avg=ravg(:,3);
-SEV_May(ii).Rrs_avg=rrs;
-SEV_May(ii).Rrs_avgcorr=rrsopt;
+SEV_191015(ii).St=allstdir(ii).name;
+SEV_191015(ii).SZA=mdata.solar_zenith;
+SEV_191015(ii).rho = mdata.mobly_factor;
+SEV_191015(ii).wl=wl;
+SEV_191015(ii).Lu_avg=ravg(:,1);
+SEV_191015(ii).Ls_avg=ravg(:,2);
+SEV_191015(ii).Ed_avg=ravg(:,3);
+SEV_191015(ii).Rrs_avg=rrs;
+SEV_191015(ii).Rrs_avgcorr=rrsopt;
 proc_par_date_time     = mdata.date_time;
 proc_par_proc_date     = datestr(datetime);
 proc_par_lat           = mdata.lat;
@@ -163,7 +163,7 @@ fclose(fileid);
 
 % close all
 end
-save('SEV_May.mat','SEV_May');
+save('SEV_191015.mat','SEV_191015');
 % save('d_Rrs.txt', 'Rrs', '-ascii');
 % save('d_Rrsopt.txt', 'Rrsopt', '-ascii');
 %  system('shutdown -s');
